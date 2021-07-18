@@ -213,6 +213,7 @@ main{
     position: relative;
     top: 50px;
     z-index: 1;
+    background: #F5F411;
 }
 
 /* intro */
@@ -649,7 +650,8 @@ main > span{
     color: black;
 }
 #dark-mode:checked ~ #rest > main > #end-div > div > p,
-#dark-mode:checked ~ #rest > main > #end-div > div > a{
+#dark-mode:checked ~ #rest > main > #end-div > div > a,
+#dark-mode:checked ~ #rest > main > span{
     color: #8D2AF5;
 }
 #dark-mode{
