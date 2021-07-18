@@ -117,8 +117,10 @@ html{
     -webkit-tap-highlight-color: transparent;
 }
 body{
-    background: #F5F411;
     margin: 0 auto;
+}
+#rest{
+    background: #F5F411;
 }
 /* HEADER */
 #header2{
@@ -276,7 +278,7 @@ main{
     "text2"
     "img2";
     width: 100%;
-    background: #8D2AF5;
+    background-color: #8D2AF5;
 }
 #text-grid1{
     grid-area: text1;
@@ -621,4 +623,28 @@ main > span{
 }
 #main-fixed > img{
     height: 30px;
+}
+#main-fixed > label{
+    color: #F5F411;
+    font-size: 30px;
+    margin: 5px 0 10px 0;
+}
+#dark-mode:checked ~ #rest > #header2,
+#dark-mode:checked ~ #rest > #main-fixed,
+#dark-mode:checked ~ #content-grid,
+#dark-mode:checked ~ #rest,
+#dark-mode:checked ~ #rest > main > #reviews,
+#dark-mode:checked ~ #rest > main > #h2-reviews{
+    background: black;
+}
+#dark-mode:checked ~ #rest > main > #content-grid > #text-grid1,
+#dark-mode:checked ~ #rest > main > #content-grid > #text-grid2{
+    color: black;
+}
+#dark-mode:checked ~ #rest > main > #end-div > div > p,
+#dark-mode:checked ~ #rest > main > #end-div > div > a{
+    color: #F5F411;
+}
+#dark-mode{
+    display: none;
 }

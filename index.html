@@ -8,169 +8,171 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header id="header2">
-        <label for="toggle2" class="label">&#9776;</label>
-        <input type="checkbox" id="toggle2">
-        <a href="#" id="logo2"><img src="logo-edited.png" alt=""></a>
-        <a href="#" class="navbar">Buy</a>
-        <a href="#" class="navbar">Blog</a>
-        <a href="#" class="navbar">About us</a>
-        <a href="#" class="navbar">Contact us</a>
-        <a href="#" id="shoppingcard2"><img src="card_travel.png" alt=""></a>
-    </header>
+    <input type="checkbox" id="dark-mode">
+    <div id="rest">
+        <!-- HEADER -->
+        <header id="header2">
+            <label for="toggle2" class="label">&#9776;</label>
+            <input type="checkbox" id="toggle2">
+            <a href="#" id="logo2"><img src="logo-edited.png" alt=""></a>
+            <a href="#" class="navbar">Buy</a>
+            <a href="#" class="navbar">Blog</a>
+            <a href="#" class="navbar">About us</a>
+            <a href="#" class="navbar">Contact us</a>
+            <a href="#" id="shoppingcard2"><img src="card_travel.png" alt=""></a>
+        </header>
 
-    <div id="main-fixed">
-        <img src="facebook.png" alt="">
-        <img src="instagram.png" alt="">
-        <img src="snapchat.png" alt="">
+        <div id="main-fixed">
+            <img src="facebook.png" alt="">
+            <img src="instagram.png" alt="">
+            <img src="snapchat.png" alt="">
+            <label for="dark-mode">&#9790;</label>
+        </div>
+
+        <!-- MAIN -->
+        <main>
+            <!-- intro -->
+            <div id="introduce">
+                <div class="image">
+                    <img src="main-black.png" alt="">
+                </div>
+                <div id="intro-content">
+                    <h2>Introduce new model</h2>
+                    <ul>
+                        <li>Advantage 1</li>
+                        <li>Advantage 2</li>
+                        <li>Advantage 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- content-grid -->
+            <div id="content-grid">
+                <div id="text-grid1" class="text">
+                    <h2>Headline</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia deserunt vel ducimus. Dolorum totam placeat, ullam non voluptatibus eius blanditiis atque consequuntur quos sint corrupti dolores neque provident vitae?</p>
+                </div>
+                <div id="text-grid2" class="text">
+                    <h2>Headline</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia deserunt vel ducimus. Dolorum totam placeat, ullam non voluptatibus eius blanditiis atque consequuntur quos sint corrupti dolores neque provident vitae?</p>
+                </div>
+                <div id="img-grid1">
+                    <img src="headphones-grid1.png" alt="" class="image">
+                </div>
+                <div id="img-grid2">
+                    <img src="headphones-grid4.png" alt="" class="image">
+                </div>
+            </div>
+
+            <!-- buy -->
+            <div id="buy-one">
+                <input type="radio" name="#1" id="open">
+                <input type="radio" name="#2" id="black" checked>
+                <input type="radio" name="#2" id="blue">
+                <input type="radio" name="#2" id="white">
+
+                <div id="buy-content">
+                    <h3>Choose color</h3>
+                    <div class="labels">
+                        <label for="black">
+                            <div id="black-div"></div>
+                        </label>
+                        <label for="blue">
+                            <div id="blue-div"></div>
+                        </label>
+                        <label for="white">
+                            <div id="silver-div"></div>
+                        </label>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti odit dolor voluptates eum ab et molestias commodi sequi doloribus quo tempora blanditiis fugiat non, laborum veniam. Deleniti, iste laudantium.</p>
+                    <div class="div-form">
+                        <input type="number" name="number" id="number" class="input-form" value="1" placeholder=" " min="1" max="10">
+                    </div>
+
+                    <div id="call-to-action">
+                        <a href="">
+                            <h3>Buy now!</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="black-edited.png" alt="" id="black-img">
+                <img src="blue-edited.png" alt="" id="blue-img">
+                <img src="white-edited.png" alt="" id="white-img">
+
+                <label for="open" id="choose-color">
+                    <div>
+                        <span>Choose color</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- features -->
+            <div id="features">
+                <h2>Features of our headphones</h2>
+                <div id="features-img">
+                    <div id="features-content1" class="feature-class-content">
+                        <img src="add_circle.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div id="features-content2" class="feature-class-content">
+                        <img src="add_circle.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- reviews -->
+            <h2 id="h2-reviews">Revievs</h2>
+            <div id="reviews">
+                <div class="review">
+                    <img src="reviews-faces/1.png" alt="">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates, enim illo magni doloremque, ad consequatur a, expedita adipisci aliquam magnam ex tenetur sed mollitia sint assumenda vero fuga. Quia!</p>
+                </div>
+                <div class="review">
+                    <img src="reviews-faces/2.png" alt="">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates, enim illo magni doloremque, ad consequatur a, expedita adipisci aliquam magnam ex tenetur sed mollitia sint assumenda vero fuga. Quia!</p>
+                </div>
+                <div class="review">
+                    <img src="reviews-faces/3.png" alt="">
+                    <h3>Name</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates, enim illo magni doloremque, ad consequatur a, expedita adipisci aliquam magnam ex tenetur sed mollitia sint assumenda vero fuga. Quia!</p>
+                </div>
+            </div>
+
+            <!-- end main -->
+            <div id="end-div">
+                <div id="end1">
+                    <a href="#">Shop</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Support</a>
+                </div>
+                <div id="end2">
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Return policy</a>
+                </div>
+                <div id="end3">
+                    <p>Have a question?</p>
+                    <p>Phone number: <br>
+                        +123456789</p>
+                    <p>info@email.com</p>
+                </div>
+            </div>
+            <span>2021 all right reserved</span>
+
+            <!-- <div id="empty-div"></div> -->
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            
+            
+        </footer>
     </div>
-
-    <!-- MAIN -->
-    <main>
-        <!-- intro -->
-        <div id="introduce">
-            <div class="image">
-                <img src="main-black.png" alt="">
-            </div>
-            <div id="intro-content">
-                <h2>Introduce new model</h2>
-                <ul>
-                    <li>Advantage 1</li>
-                    <li>Advantage 2</li>
-                    <li>Advantage 3</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- content-grid -->
-        <div id="content-grid">
-            <div id="text-grid1" class="text">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia deserunt vel ducimus. Dolorum totam placeat, ullam non voluptatibus eius blanditiis atque consequuntur quos sint corrupti dolores neque provident vitae?</p>
-            </div>
-            <div id="text-grid2" class="text">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia deserunt vel ducimus. Dolorum totam placeat, ullam non voluptatibus eius blanditiis atque consequuntur quos sint corrupti dolores neque provident vitae?</p>
-            </div>
-            <div id="img-grid1">
-                <img src="headphones-grid1.png" alt="" class="image">
-            </div>
-            <div id="img-grid2">
-                <img src="headphones-grid4.png" alt="" class="image">
-            </div>
-            
-            
-        </div>
-
-        <!-- buy -->
-        <div id="buy-one">
-            <input type="radio" name="#1" id="open">
-            <input type="radio" name="#2" id="black" checked>
-            <input type="radio" name="#2" id="blue">
-            <input type="radio" name="#2" id="white">
-
-            <div id="buy-content">
-                <h3>Choose color</h3>
-                <div class="labels">
-                    <label for="black">
-                        <div id="black-div"></div>
-                    </label>
-                    <label for="blue">
-                        <div id="blue-div"></div>
-                    </label>
-                    <label for="white">
-                        <div id="silver-div"></div>
-                    </label>
-                </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti odit dolor voluptates eum ab et molestias commodi sequi doloribus quo tempora blanditiis fugiat non, laborum veniam. Deleniti, iste laudantium.</p>
-                <div class="div-form">
-                    <input type="number" name="number" id="number" class="input-form" value="1" placeholder=" " min="1" max="10">
-                </div>
-
-                <div id="call-to-action">
-                    <a href="">
-                        <h3>Buy now!</h3>
-                    </a>
-                </div>
-            </div>
-
-            <img src="black-edited.png" alt="" id="black-img">
-            <img src="blue-edited.png" alt="" id="blue-img">
-            <img src="white-edited.png" alt="" id="white-img">
-
-            <label for="open" id="choose-color">
-                <div>
-                    <span>Choose color</span>
-                </div>
-            </label>
-        </div>
-
-        <!-- features -->
-        <div id="features">
-            <h2>Features of our headphones</h2>
-            <div id="features-img">
-                <div id="features-content1" class="feature-class-content">
-                    <img src="add_circle.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div id="features-content2" class="feature-class-content">
-                    <img src="add_circle.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- reviews -->
-        <h2 id="h2-reviews">Revievs</h2>
-        <div id="reviews">
-            <div class="review">
-                <img src="reviews-faces/1.png" alt="">
-                <h3>Name</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates, enim illo magni doloremque, ad consequatur a, expedita adipisci aliquam magnam ex tenetur sed mollitia sint assumenda vero fuga. Quia!</p>
-            </div>
-            <div class="review">
-                <img src="reviews-faces/2.png" alt="">
-                <h3>Name</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates, enim illo magni doloremque, ad consequatur a, expedita adipisci aliquam magnam ex tenetur sed mollitia sint assumenda vero fuga. Quia!</p>
-            </div>
-            <div class="review">
-                <img src="reviews-faces/3.png" alt="">
-                <h3>Name</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates, enim illo magni doloremque, ad consequatur a, expedita adipisci aliquam magnam ex tenetur sed mollitia sint assumenda vero fuga. Quia!</p>
-            </div>
-        </div>
-
-        <!-- end main -->
-        <div id="end-div">
-            <div id="end1">
-                <a href="#">Shop</a>
-                <a href="#">About us</a>
-                <a href="#">Contact us</a>
-                <a href="#">Support</a>
-            </div>
-            <div id="end2">
-                <a href="">Terms & Conditions</a>
-                <a href="">Privacy policy</a>
-                <a href="">Return policy</a>
-            </div>
-            <div id="end3">
-                <p>Have a question?</p>
-                <p>Phone number: <br>
-                    +123456789</p>
-                <p>info@email.com</p>
-            </div>
-        </div>
-        <span>2021 all right reserved</span>
-
-        <!-- <div id="empty-div"></div> -->
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        
-        
-    </footer>
 </body>
 </html>
