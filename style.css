@@ -644,7 +644,8 @@ main > span{
 #dark-mode:checked ~ #rest > main > #buy-one > #choose-color,
 #dark-mode:checked ~ #rest > main > #buy-one > #buy-content > h3,
 #dark-mode:checked ~ #rest > main > #buy-one > #buy-content > p,
-#dark-mode:checked ~ #rest > main > #buy-one > #buy-content > #call-to-action > a > h3{
+#dark-mode:checked ~ #rest > main > #buy-one > #buy-content > #call-to-action > a > h3,
+#dark-mode:checked ~ #rest > main > #features > #features-img > .feature-class-content > p{
     color: black;
 }
 #dark-mode:checked ~ #rest > main > #end-div > div > p,
