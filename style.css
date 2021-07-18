@@ -211,7 +211,7 @@ main{
     justify-content: center;
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 100px;
     z-index: 1;
     background: #F5F411;
 }
@@ -639,7 +639,7 @@ main > span{
 #dark-mode:checked ~ #rest > main{
     background: black;
 }
-#dark-mode:checked ~ #rest > main > #content-grid > #text-grid1,
+/* #dark-mode:checked ~ #rest > main > #content-grid > #text-grid1,
 #dark-mode:checked ~ #rest > main > #content-grid > #text-grid2,
 #dark-mode:checked ~ #rest > #header2 > .navbar,
 #dark-mode:checked ~ #rest > main > #buy-one > #choose-color,
@@ -648,11 +648,12 @@ main > span{
 #dark-mode:checked ~ #rest > main > #buy-one > #buy-content > #call-to-action > a > h3,
 #dark-mode:checked ~ #rest > main > #features > #features-img > .feature-class-content > p{
     color: black;
-}
+} */
 #dark-mode:checked ~ #rest > main > #end-div > div > p,
 #dark-mode:checked ~ #rest > main > #end-div > div > a,
 #dark-mode:checked ~ #rest > main > span{
     color: #8D2AF5;
+    filter: invert(100%);
 }
 #dark-mode{
     display: none;
@@ -660,4 +661,28 @@ main > span{
 #dark-mode:checked ~ #rest > main > #reviews > .review,
 #dark-mode:checked ~ #rest > main > #h2-reviews{
     color: #8D2AF5;
+}
+#dark-mode:checked ~ #rest > #header2 > #logo2,
+#dark-mode:checked ~ #rest > #header2 > #shoppingcard2,
+#dark-mode:checked ~ #rest > #header2 > label{
+    filter: invert(100%);
+}
+@media only screen and (min-width: 700px){
+    #dark-mode:checked ~ #rest > #header2 > .navbar{
+        color: #8D2AF5;
+        filter: invert(100%);
+    }
+}
+#dark-mode:checked ~ #rest > main > #content-grid{
+    background: #8D2AF5;
+    filter: invert(100%);
+}
+#dark-mode:checked ~ #rest > main > #content-grid > .text,
+#dark-mode:checked ~ #rest > main > #content-grid > #img-grid1,
+#dark-mode:checked ~ #rest > main > #content-grid > #img-grid2{
+    filter: inherit;
+}
+#dark-mode:checked ~ #rest > main > #introduce > #intro-content > h2,
+#dark-mode:checked ~ #rest > main > #introduce > #intro-content > ul > li{
+    filter: invert(100%);
 }
