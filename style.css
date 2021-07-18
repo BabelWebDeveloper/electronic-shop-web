@@ -634,17 +634,27 @@ main > span{
 #dark-mode:checked ~ #content-grid,
 #dark-mode:checked ~ #rest,
 #dark-mode:checked ~ #rest > main > #reviews,
-#dark-mode:checked ~ #rest > main > #h2-reviews{
+#dark-mode:checked ~ #rest > main > #h2-reviews,
+#dark-mode:checked ~ #rest > main{
     background: black;
 }
 #dark-mode:checked ~ #rest > main > #content-grid > #text-grid1,
-#dark-mode:checked ~ #rest > main > #content-grid > #text-grid2{
+#dark-mode:checked ~ #rest > main > #content-grid > #text-grid2,
+#dark-mode:checked ~ #rest > #header2 > .navbar,
+#dark-mode:checked ~ #rest > main > #buy-one > #choose-color,
+#dark-mode:checked ~ #rest > main > #buy-one > #buy-content > h3,
+#dark-mode:checked ~ #rest > main > #buy-one > #buy-content > p,
+#dark-mode:checked ~ #rest > main > #buy-one > #buy-content > #call-to-action > a > h3{
     color: black;
 }
 #dark-mode:checked ~ #rest > main > #end-div > div > p,
 #dark-mode:checked ~ #rest > main > #end-div > div > a{
-    color: #F5F411;
+    color: #8D2AF5;
 }
 #dark-mode{
     display: none;
+}
+#dark-mode:checked ~ #rest > main > #reviews > .review,
+#dark-mode:checked ~ #rest > main > #h2-reviews{
+    color: #8D2AF5;
 }
