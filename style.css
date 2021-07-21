@@ -239,7 +239,7 @@ header > a{
 }
 /* main-fixed dark mode */
 #dark-mode:checked ~ #div-body > #main-fixed{
-    filter: invert(100%);
+    background: #60D929;
 }
 
 /* MAIN */
@@ -671,11 +671,13 @@ main{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
     grid-template-areas: 
     "index1"
     "index2"
-    "index3";
+    "index3"
+    "span";
+    padding-bottom: 1rem;
 }
 #end1{
     grid-area: index1;
@@ -686,12 +688,29 @@ main{
 #end3{
     grid-area: index3;
 }
+#end-span{
+    text-align: center;
+    width: 100%;
+    grid-area: span;
+}
 @media only screen and (min-width: 700px){
     #end-div{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 0.5fr;
         grid-template-areas: 
-        "index1 index2 index3";
+        "index1 index2 index3"
+        "span span span";
         justify-content: space-around;
     }
+    #end-span{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+#dark-mode:checked ~ #div-body > main > #end-div,
+#dark-mode:checked ~ #div-body > main > #end-div > #end1 > a,
+#dark-mode:checked ~ #div-body > main > #end-div > #end2 > a,
+#dark-mode:checked ~ #div-body > main > #end-div > #end3 > p{
+    color: #60D929;
+    filter: inherit;
 }
