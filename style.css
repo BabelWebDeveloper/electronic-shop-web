@@ -127,6 +127,13 @@ body{
     width: 100%;
     padding-bottom: 100px;
 }
+h2{
+    font-size: 3.2rem;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+}
 /* HEADER */
 header{
     width: 100%;
@@ -283,7 +290,6 @@ main{
 #intro-content > h2{
     position: relative;
     top: -5vh;
-    font-size: 2rem;
     color: #8D2AF5;
 }
 #intro-content > ul > li{
@@ -346,17 +352,17 @@ main{
     grid-area: img2;
     width: 100%;
 }
-.image-grid{
+#img-grid1 > img,
+#img-grid2 > img{
     width: 100%;
 }
 .text{
     color: #F5F411;
+    font-size: 1.6rem;
+    padding: 1rem 0;
 }
 .text > h2{
-    font-size: 2.4rem;
     width: 100%;
-    text-align: center;
-    margin-top: 1rem;
 }
 .text > p{
     font-size: 1.6rem;
@@ -369,10 +375,6 @@ main{
         grid-template-areas: 
         "text1 img1"
         "img2 text2";
-    }
-    .image-grid{
-        width: 100%;
-        padding: 0;
     }
 }
 /* content-grid dark mode */
@@ -422,9 +424,6 @@ main{
     padding: 0.5rem;
     border-radius: 1rem;
     opacity: 0;
-}
-#buy-content > h3{
-    font-size: 1.6rem;
 }
 #buy-content > p{
     padding: 1rem 0;
@@ -519,9 +518,8 @@ main{
 }
 /* features */
 #h2-features{
-    font-size: 2.4rem;
     color: #8D2AF5;
-    padding-bottom: 1rem;
+    padding: 3rem 0;
 }
 #features-img{
     width: 300px;
@@ -548,7 +546,7 @@ main{
     margin-left: 1rem;
     font-size: 1rem;
     background: #8c2af5d2;
-    color:black;
+    color:#F5F411;
     padding: 1rem;
     border-radius: 2rem;
     display: none;
@@ -604,8 +602,7 @@ main{
     background: #8D2AF5;
     color:#F5F411;
     width: 100%;
-    text-align: center;
-    font-size: 2.4rem;
+    line-height: 4rem;
 }
 #reviews{
     display: flex;
@@ -619,10 +616,7 @@ main{
 .review{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
-    color:#F5F411;
     width: 50%;
     padding: 1rem 0;
 }
@@ -630,14 +624,17 @@ main{
     width: 20vw;
     margin-bottom: 1rem;
 }
-.review > h3,
-.review > P{
+.review > h3{
+    color:#F5F411;
     margin-bottom: 1rem;
     padding: 0 1rem;
 }
 @media only screen and (min-width: 700px){
     #reviews{
         flex-direction: row;
+    }
+    .review{
+        width: 20%;
     }
 }
 #dark-mode:checked ~ #div-body > main > #reviews{
