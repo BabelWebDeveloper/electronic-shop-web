@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
-    <title>Electronic website</title>
+    <title>Electronic shop web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <input type="checkbox" id="dark-mode">
-    <div id="rest">
+    <div id="div-body">
         <!-- HEADER -->
-        <header id="header2">
-            <label for="toggle2" class="label">&#9776;</label>
-            <input type="checkbox" id="toggle2">
-            <a href="#" id="logo2"><img src="logo-edited.png" alt=""></a>
+        <header>
+            <label for="toggle" class="label">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <a href="#" id="logo"><img src="logo-edited.png" alt=""></a>
             <a href="#" class="navbar">Buy</a>
             <a href="#" class="navbar">Blog</a>
             <a href="#" class="navbar">About us</a>
             <a href="#" class="navbar">Contact us</a>
-            <a href="#" id="shoppingcard2"><img src="card_travel.png" alt=""></a>
+            <a href="#" id="shoppingcard"><img src="card_travel.png" alt=""></a>
         </header>
 
         <div id="main-fixed">
@@ -31,9 +31,9 @@
 
         <!-- MAIN -->
         <main>
-            <!-- intro -->
+            <!-- introduce -->
             <div id="introduce">
-                <div class="image">
+                <div class="main-image">
                     <img src="main-black.png" alt="">
                 </div>
                 <div id="intro-content">
@@ -57,10 +57,10 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia deserunt vel ducimus. Dolorum totam placeat, ullam non voluptatibus eius blanditiis atque consequuntur quos sint corrupti dolores neque provident vitae?</p>
                 </div>
                 <div id="img-grid1">
-                    <img src="headphones-grid1.png" alt="" class="image">
+                    <img src="headphones-grid1.png" alt="" class="image-grid">
                 </div>
                 <div id="img-grid2">
-                    <img src="headphones-grid4.png" alt="" class="image">
+                    <img src="headphones-grid4.png" alt="" class="image-grid">
                 </div>
             </div>
 
@@ -89,11 +89,7 @@
                         <input type="number" name="number" id="number" class="input-form" value="1" placeholder=" " min="1" max="10">
                     </div>
 
-                    <div id="call-to-action">
-                        <a href="">
-                            <h3>Buy now!</h3>
-                        </a>
-                    </div>
+                    <a href="" id="call-to-action">Buy now!</a>
                 </div>
 
                 <img src="black-edited.png" alt="" id="black-img">
@@ -101,25 +97,21 @@
                 <img src="white-edited.png" alt="" id="white-img">
 
                 <label for="open" id="choose-color">
-                    <div>
-                        <span>Choose color</span>
-                    </div>
+                    <span>Choose color</span>
                 </label>
             </div>
 
             <!-- features -->
-            <div id="features">
-                <h2>Features of our headphones</h2>
-                <div id="features-img">
-                    <div id="features-content1" class="feature-class-content">
-                        <img src="add_circle.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+            <h2 id="h2-features">Features of our headphones</h2>
+            <div id="features-img">
+                <div id="features-content1" class="feature-class-content">
+                    &#43;
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
 
-                    <div id="features-content2" class="feature-class-content">
-                        <img src="add_circle.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                <div id="features-content2" class="feature-class-content">
+                    &#43;
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
 
@@ -163,8 +155,10 @@
                     <p>info@email.com</p>
                 </div>
             </div>
-            <span>2021 all right reserved</span>
+            <span id="end-span">2021 all right reserved</span>
+
         </main>
+
     </div>
 </body>
 </html>
