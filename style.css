@@ -234,7 +234,7 @@ header > a{
 /* main-fixed */
 #main-fixed{
     position: fixed;
-    top: 97vh;
+    top: 95vh;
     height: 40px;
     width: 100%;
     background: #8D2AF5;
@@ -530,7 +530,7 @@ main{
 #features-img{
     width: 300px;
     height: 200px;
-    background-image: url("4features.png");
+    background-image: url("features2.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -680,7 +680,7 @@ main{
     "index2"
     "index3"
     "span";
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 #end1{
     grid-area: index1;
